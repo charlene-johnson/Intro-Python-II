@@ -67,14 +67,10 @@ while True:
         if player.current_room.w_to is not None:
             player.current_room = player.current_room.w_to
 
+    # If the user enters "q", quit the game.
     elif player_input == 'q':
         break
 
+    # Print an error message if the movement isn't allowed.
     else: # player_input not in ('n', 's', 'w', 'e'):
         print('Incorrect input, try another direction')
-
-
-
-# Print an error message if the movement isn't allowed.
-#
-# If the user enters "q", quit the game.
