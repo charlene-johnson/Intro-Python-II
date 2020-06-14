@@ -1,8 +1,8 @@
 from room import Room
 from player import Player
 
-# Declare all the s
-# dictionaries of s
+# Declare all the rooms
+# dictionaries of rooms
 outside =  Room("Outside Cave Entrance", "North of you, the cave mount beckons")
 
 foyer = Room("Foyer", """Dim light filters in from the south. Dusty
@@ -21,7 +21,7 @@ earlier adventurers. The only exit is to the south.""")
 
 
 
-# Link s together
+# Link rooms together
 # can remove [] for easier way to read
 
 outside.n_to = foyer
@@ -32,6 +32,16 @@ overlook.s_to = foyer
 narrow.w_to = foyer
 narrow.n_to = treasure
 treasure.s_to = narrow
+
+# Declare items
+# key = Room()
+
+# Link items in rooms
+outside.item = key
+foyer.item = torch
+foyer.item = hat
+foyer.item = sword
+
 
 # Main
 
