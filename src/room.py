@@ -1,3 +1,4 @@
+from item import Item
 # Implement a class to hold room information. This should have name and
 # description attributes.
 class Room:
@@ -8,6 +9,7 @@ class Room:
     self.s_to = None
     self.e_to = None
     self.w_to = None
+    self.item = []
 
   def __str__(self):
       output = f'{self.name}: {self.description}\n'
@@ -21,3 +23,5 @@ class Room:
         output += 'To the West is: ' + self.w_to.name + '\n'
 
       return output
+
+# add items to rooms

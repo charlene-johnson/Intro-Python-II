@@ -1,5 +1,6 @@
 from room import Room
 from player import Player
+from item import Item
 
 # Declare all the rooms
 # dictionaries of rooms
@@ -19,6 +20,7 @@ treasure = Room("Treasure Chamber", """You've found the long-lost treasure
 chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south.""")
 
+torch_item = Item('torch', 'with the blow of the cavern, the torch burns barely enough to see')
 
 
 # Link rooms together
